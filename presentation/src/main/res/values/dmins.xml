@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="exp_padding_small">5dp</dimen>
+    <dimen name="exp_padding">10dp</dimen>
+    <dimen name="exp_padding_medium">20dp</dimen>
+    <dimen name="exp_padding_large">30dp</dimen>
+</resources>

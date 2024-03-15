@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!-- XML implementation of Card Layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/exp_padding"
+    android:paddingVertical="@dimen/exp_padding_small">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@color/shimmer_color" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="@dimen/exp_padding"
+        android:layout_weight="1"
+        android:background="@color/shimmer_color"
+        android:paddingEnd="@dimen/exp_padding" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:paddingEnd="@dimen/exp_padding" />
+
+</LinearLayout>
+
