@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_decrease"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:minWidth="0dp"
+        android:paddingHorizontal="@dimen/exp_padding"
+        app:icon="@drawable/ic_decrease" />
+
+    <TextView
+        android:id="@+id/tv_quantity"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:paddingHorizontal="@dimen/exp_padding"
+        android:textStyle="bold"
+        tools:ignore="TextViewEdits"
+        tools:text="0" />
+
+    <Button
+        android:id="@+id/btn_increase"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:minWidth="0dp"
+        android:paddingHorizontal="@dimen/exp_padding"
+        app:icon="@drawable/ic_increase" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/exp_padding"
+        android:paddingVertical="@dimen/exp_padding_small">
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/delete_product"
+            android:padding="@dimen/exp_padding_small"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_product_title"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Product" />
+
+        <TextView
+            android:id="@+id/tv_unit_price"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingEnd="@dimen/exp_padding"
+            tools:text="1.50€" />
+
+        <include
+            android:id="@+id/component_quantity"
+            layout="@layout/component_quantity_select"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</layout>
